@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-#ifdef FPRKFN
+#ifndef FORKFN
 #define FORKFN 0
 #endif
 
@@ -92,7 +92,7 @@ int main(void){
 			fork6();
 			break;
 		default:
-			printf("Set FORKFN to intetger between 1~6 using gcc option\n");
+			printf("Set FORKFN to integer between 1~6 using gcc option\n");
 	}
 	return 0;
 }
